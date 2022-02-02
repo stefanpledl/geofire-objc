@@ -31,8 +31,9 @@
             [NSException raise:NSInvalidArgumentException format:@"Precision must be larger than 0!"];
         }
         if (precision > GF_MAX_PRECISION) {
-            [NSException raise:NSInvalidArgumentException format:@"Precision must be less than %d!",
-             (GF_MAX_PRECISION+1)];
+            precision = GF_MAX_PRECISION;
+            //[NSException raise:NSInvalidArgumentException format:@"Precision must be less than %d!",
+            // (GF_MAX_PRECISION+1)];
         }
         if (!CLLocationCoordinate2DIsValid(location)) {
             [NSException raise:NSInvalidArgumentException
