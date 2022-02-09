@@ -195,40 +195,40 @@
                                        wrapLongitude:(region.center.longitude + region.span.longitudeDelta/2)];
 
     if(latitudeNorth > 90){
-        latitudeNorth = 90
+        latitudeNorth = 90;
     }
     if(latitudeNorth < -90){
-        latitudeNorth = -90
+        latitudeNorth = -90;
     }
     if(latitudeSouth > 90){
-        latitudeSouth = 90
+        latitudeSouth = 90;
     }
     if(latitudeSouth < -90){
-        latitudeSouth = -90
+        latitudeSouth = -90;
     }
     if(latitudeCenter > 90){
-        latitudeCenter = 90
+        latitudeCenter = 90;
     }
     if(latitudeCenter < -90){
-        latitudeCenter = -90
+        latitudeCenter = -90;
     }
     if(longitudeCenter < -180){
-        longitudeCenter = -180
+        longitudeCenter = -180;
     }
     if(longitudeCenter > 180){
-        longitudeCenter = 180
+        longitudeCenter = 180;
     }
     if(longitudeWest < -180){
-        longitudeWest = -180
+        longitudeWest = -180;
     }
     if(longitudeWest > 180){
-        longitudeWest = 180
+        longitudeWest = 180;
     }
     if(longitudeEast < -180){
-        longitudeEast = -180
+        longitudeEast = -180;
     }
     if(longitudeEast > 180){
-        longitudeEast = 180
+        longitudeEast = 180;
     }
         
     addQuery(latitudeCenter, longitudeCenter);
