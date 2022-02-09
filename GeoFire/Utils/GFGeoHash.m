@@ -32,10 +32,10 @@
         }
         if (precision > GF_MAX_PRECISION) {
             precision = GF_MAX_PRECISION;
-            [NSException raise:NSInvalidArgumentException format:@"Precision must be less than %d!", (GF_MAX_PRECISION+1)];
+            //[NSException raise:NSInvalidArgumentException format:@"Precision must be less than %d!", (GF_MAX_PRECISION+1)];
         }
         if (!CLLocationCoordinate2DIsValid(location)) {
-            [NSException raise:NSInvalidArgumentException format:@"Not a valid geo location: [%f,%f]", location.latitude, location.longitude];
+            //[NSException raise:NSInvalidArgumentException format:@"Not a valid geo location: [%f,%f]", location.latitude, location.longitude];
         }
 
         double longitudeRange[] = { -180 , 180 };
